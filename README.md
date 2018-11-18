@@ -21,5 +21,11 @@ Orchestra will create an example static site hosted on AWS using S3 and Cloudfro
 
 ## Screenshots
 
+### orchestra.sh
 ![orchestra](https://user-images.githubusercontent.com/3712226/48677330-e192f280-eb38-11e8-963f-2e5622e70ea5.png)
+
+### deployBlog.sh
 ![deployblog](https://user-images.githubusercontent.com/3712226/48677329-e192f280-eb38-11e8-98bf-c377b6dd1631.png)
+
+### Site
+![site](https://user-images.githubusercontent.com/3712226/48677430-97127580-eb3a-11e8-875d-de1b0825bd0c.png)
