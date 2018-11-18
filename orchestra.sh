@@ -6,7 +6,7 @@
 
 YOUR_DOMAIN=""
 REGION="us-east-1"
-
+CLEANUP_DEPLOY_FILES=true
 
 #####################################
 #                                   #
@@ -194,9 +194,19 @@ echo "{
 
 aws cloudfront create-distribution --distribution-config file://distroConfig.json --query 'Distribution.ARN'
 
+CDN_DOMAIN_NAME=`aws cloudfront list-distributions --output text --query "DistributionList.Items[].{DomainName: DomainName, Id: Id, OriginDomainName: Origins.Items[0].DomainName}[?contains(OriginDomainName, '${YOUR_DOMAIN}')] | [0].DomainName"`
+
 printf "${CHECKMARK}"
 echo "Done!"
+printf "${WARNING}"
+echo "Create the following DNS record:   CNAME ${YOUR_DOMAIN} -> ${CDN_DOMAIN_NAME}"
 echo ""
+
+if [ "$CLEANUP_DEPLOY_FILES" = true ] ; then
+    echo ''
+    rm distroConfig.json
+    rm bucketPolicy.json
+fi
 
 END=`date "+%Y-%m-%d %H:%M:%S"`
 
