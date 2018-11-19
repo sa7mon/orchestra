@@ -8,6 +8,7 @@ Orchestra will create an example static site hosted on AWS using S3 and Cloudfro
 
 ## Requirements
 * [awscli](https://aws.amazon.com/cli/)
+* [hugo](https://gohugo.io)
 * A domain name with access to it's DNS records
 
 
