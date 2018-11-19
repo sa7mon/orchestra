@@ -29,3 +29,9 @@ Orchestra will create an example static site hosted on AWS using S3 and Cloudfro
 
 ### Site
 ![site](https://user-images.githubusercontent.com/3712226/48677430-97127580-eb3a-11e8-875d-de1b0825bd0c.png)
+
+## License
+MIT
+
+## Credits
+The idea for this tool came from [this post](https://lustforge.com/2016/02/27/hosting-hugo-on-aws/) and much of the code is the same.
