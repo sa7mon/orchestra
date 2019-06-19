@@ -20,6 +20,10 @@ Orchestra will create an example static site hosted on AWS using S3 and Cloudfro
 3. Run `./deployBlog.sh`
 4. After DNS records and CDN files have propogated, visit `https://yourdomain.com`
 
+## Video Tutorial
+
+[![Watch the video](https://user-images.githubusercontent.com/3712226/59740666-65779f00-922e-11e9-9da5-9d09cb9e9b26.PNG)](https://www.youtube.com/watch?v=yFOp0dlQ3_g)
+
 ## Screenshots
 
 ### orchestra.sh
